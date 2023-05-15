@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Layout from "./layout/Layout";
+import TaskItem from "./components/TaskItem";
+import "rsuite/dist/rsuite.css";
+import Searching from "./components/Searching";
+import ControlPanel from "./components/ControlPanel";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app mt-3">
+      <Layout >
+        <Searching/>
+        <div className="flex h-3/6 items-center mt-5 gap-5 flex-col overflow-scroll">
+          <TaskItem />
+          <TaskItem />
+          <TaskItem />
+          <TaskItem />
+          <TaskItem />
+          <TaskItem />
+        </div>
+
+        <ControlPanel/>
+
+      </Layout>
     </div>
   );
 }
