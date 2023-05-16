@@ -2,8 +2,12 @@ import React from 'react';
 import { Checkbox } from 'rsuite'
 import TrashIcon from '@rsuite/icons/Trash';
 import EditIcon from '@rsuite/icons/Edit';
+import {useAdditems} from '../hooks/useAdditems'
 
 function TaskItem() {
+
+  const {useAdditemsHandler} = useAdditems();
+  console.log(useAdditemsHandler());
 
     //styling compoinent icons
     const IconTrash =({color, size}) => <TrashIcon style={{ color, fontSize: size, cursor:'pointer' }}/>

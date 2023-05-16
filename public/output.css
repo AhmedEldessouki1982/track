@@ -648,28 +648,16 @@ video {
   height: 4rem;
 }
 
-.h-24{
-  height: 6rem;
-}
-
 .h-3\/6{
   height: 50%;
-}
-
-.h-full{
-  height: 100%;
-}
-
-.h-32{
-  height: 8rem;
 }
 
 .h-36{
   height: 9rem;
 }
 
-.h-44{
-  height: 11rem;
+.h-full{
+  height: 100%;
 }
 
 .w-16{
